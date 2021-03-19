@@ -11,12 +11,8 @@
 <body>
     <div class="login">
         <asp:Panel ID="Panel1" runat="server"></asp:Panel>
-
-
-
     </div>
     <form id="form1" runat="server">
-        
     </form>
 </body>
 </html>

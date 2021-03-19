@@ -53,13 +53,9 @@ namespace Inicio_con_facebook
         {
             string url = "https://graph.facebook.com/me?access_token=" + a_token + "&fields=id,name";
             WebClient cliente = new WebClient();
-
             Stream datos = cliente.OpenRead(url);
             StreamReader info = new StreamReader(datos);
             string json_datos_usuario = info.ReadToEnd();
-            
-            
-            
             datos.Close();
             info.Close();
             return json_datos_usuario;
