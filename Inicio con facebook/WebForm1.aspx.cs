@@ -18,7 +18,6 @@ namespace Inicio_con_facebook
         protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("https://www.facebook.com/dialog/oauth/?client_id="+id_app+"&redirect_uri=https://localhost:"+ Request.ServerVariables["SERVER_PORT"] +"/WebForm2.aspx&state=1&responce_type=code" );
-
         }
     }
 }
